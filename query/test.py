@@ -4,7 +4,7 @@
 import question2neo4j
 
 if __name__ == '__main__':
-    q2n = question2neo4j.Question2neo4j(['./external_dict/dict.txt'])
+    q2n = question2neo4j.Question2neo4j(['./external_dict/dict.txt', './external_dict/dict1.txt'])
     while True:
         question = raw_input()
         my_query = q2n.get_neo4j(question.decode('utf-8'))
